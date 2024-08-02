@@ -255,6 +255,10 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
         if (feature.properties.name === "England") {
             feature.properties.name = "United Kingdom";
         }
+        if (feature.properties.name === "USA") {
+            feature.properties.name = "United States";
+        }
+        
     });
 
     svg.selectAll("path")
